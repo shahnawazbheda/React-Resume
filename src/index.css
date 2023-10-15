@@ -17,3 +17,27 @@ code {
 }
 
 
+
+.fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+.slide-in-right {
+  animation: slide-in-right 0.5s ease-in-out;
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.5s ease-in-out;
+}
+
+.scale-up {
+  animation: scale-up 0.5s ease-in-out;
+}
+
+.rotate {
+  animation: rotate 0.5s ease-in-out;
+}
+
+.bounce {
+  animation: bounce 0.5s ease-in-out;
+}

@@ -1,24 +1,90 @@
-/* Slide-in animation for content */
-.slide-content-enter {
-    transform: translateY(-100%);
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+
+.slide-in-right {
+  animation: slideInRight 1s;
+}
+
+
+.slide-in-left {
+  animation: slideInLeft 1s;
+}
+
+
+.scale-up {
+  animation: scaleUp 1s;
+}
+
+
+.rotate {
+  animation: rotate 1s;
+}
+
+
+.bounce {
+  animation: bounce 1s;
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    transition: transform 0.3s, opacity 0.3s;
   }
-  
-  .slide-content-enter-active {
-    transform: translateY(0);
+  to {
     opacity: 1;
   }
-  
-  /* Slide-out animation for content */
-  .slide-content-exit {
-    transform: translateY(0);
-    opacity: 1;
-    transition: transform 0.3s, opacity 0.3s;
-  }
-  
-  .slide-content-exit-active {
-    transform: translateY(-100%);
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
     opacity: 0;
   }
-  
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
