@@ -1,0 +1,24 @@
+/* Slide-in animation for content */
+.slide-content-enter {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .slide-content-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /* Slide-out animation for content */
+  .slide-content-exit {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .slide-content-exit-active {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  
