@@ -8,8 +8,8 @@ import './Resume.css';
 
 export default function Resume() {
 
-    const [contentVisible, setContentVisible] = useState(false);
-    const [selectedContent, setSelectedContent] = useState(null);
+    const [contentVisible, setContentVisible] = useState('home');
+    const [selectedContent, setSelectedContent] = useState('home');
 
     const animations = [
         'fade-in',
