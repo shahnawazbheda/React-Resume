@@ -114,91 +114,45 @@ export default function Resume() {
       case "resume":
         return (
           <div className={contentClasses}>
-            <div className="container mx-auto px-4 mt-5">
-              <div className="bg-white border rounded-3xl shadow">
-                <div className="text-2xl border-b rounded-t-3xl text-white bg-[#2ECA7F]">
-                  <p className="text-5xl p-5 text-center">Resume</p>
-                </div>
+            <div className={contentClasses}>
+              <div className="container mx-auto px-4 mt-5">
+                <div className="bg-white border rounded-3xl shadow">
+                  <div className="text-2xl border-b rounded-t-3xl text-white bg-[#2ECA7F]">
+                    <p className='text-5xl p-5 text-center'>Resume</p>
+                  </div>
 
-                <div className="p-5 container mx-5">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <p className="text-2xl font-bold">Education</p>
+                  <div className="p-5 container mx-5">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <p className='text-2xl font-bold'>Education</p>
 
-                      <a
-                        href="#"
-                        className="block mt-5 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                          Specialization Course
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-700">
-                          Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
-                          tortor
-                        </p>
-                      </a>
+                        <a href="#" className="block mt-5 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+                          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Msc.IT</h5>
+                          <p className="font-normal text-gray-700 dark:text-gray-700">Atmiya University</p>
+                        </a>
 
-                      <a
-                        href="#"
-                        className="block mt-5 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                          Specialization Course
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-700">
-                          Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
-                          tortor
-                        </p>
-                      </a>
+                        <a href="#" className="block mt-5 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+                          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">BCA</h5>
+                          <p className="font-normal text-gray-700 dark:text-gray-700">H.J. Doshi</p>
+                        </a>
 
-                      <a
-                        href="#"
-                        className="block mt-5 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                          Specialization Course
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-700">
-                          Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
-                          tortor
-                        </p>
-                      </a>
-                    </div>
 
-                    <div>
-                      <p className="text-2xl font-bold">Experience</p>
-                      <a
-                        href="#"
-                        className="block p-6 mt-5 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                          Frontend-developer
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-700">
-                          Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
-                          tortor.
-                        </p>
-                      </a>
+                      </div>
 
-                      <a
-                        href="#"
-                        className="block p-6 mt-5 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                          Web Designer
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-700">
-                          Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
-                          tortor.
-                        </p>
-                      </a>
+                      <div>
+                        <p className='text-2xl font-bold'>Experience</p>
+                        <a href="#" className="block p-6 mt-5 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+                          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Frontend-developer</h5>
+                          <p className="font-normal text-gray-700 dark:text-gray-700">ImbueSoft llp</p>
+                        </a>
 
-                      <a
-                        href="#"
-                        className="block p-6 mt-5 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
-                          Graphic Designer
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-700">
-                          Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
-                          tortor.
-                        </p>
-                      </a>
+                        <a href="#" className="block p-6 mt-5 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+                          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Web Designer</h5>
+                          <p className="font-normal text-gray-700 dark:text-gray-700">ImbueSoft llp</p>
+                        </a>
+
+
+                      </div>
                     </div>
                   </div>
                 </div>
