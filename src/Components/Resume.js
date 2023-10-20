@@ -9,7 +9,7 @@ import medicCare from "../assets/images/medicCare.jpeg";
 import "./Resume.css";
 
 export default function Resume() {
-  const [contentVisible, setContentVisible] = useState("home");
+  const [contentVisible, setContentVisible] = useState(true);
   const [selectedContent, setSelectedContent] = useState("home");
 
   const animations = ["fade-in", "slide-in-right", "slide-in-left", "scale-up", "rotate", "bounce"];
@@ -37,75 +37,69 @@ export default function Resume() {
       case "home":
         return (
           <div className={contentClasses}>
-            <div className="container mx-auto px-4 mt-5">
+            <div className="mt-5">
               <div className="bg-white border rounded-3xl shadow">
                 <div className="text-2xl border-b rounded-t-3xl text-white bg-[#2ECA7F]">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="text-center">
                       <div className="flex justify-center">
                         <img
-                          className="max-w-xs rounded-xl transition duration-100 ease-in-out hover:scale-110 m-3 max-w-[50%]"
+                          className="max-w-xs md:ms-16 rounded-xl transition duration-100 ease-in-out hover:scale-110 m-3 sm:max-w-sm max-w-[40%] mt-12 md:max-w-sm"
                           src={profile}
                           alt="User Image"
                         />
                       </div>
                     </div>
-                    <div className="px-4 md:px-8">
-                      <div className="p-4 md:p-6 rounded-lg">
-                        <div className="text-center">
-                          <h1 className="text-3xl md:text-5xl mt-6 md:mt-12">Shahnawaz Bheda</h1>
-                          <p className="text-lg md:text-xl mt-3">Web Designer</p>
-                          <div className="mt-4 md:mt-6 flex justify-center">
-                            <a href="https://twitter.com/BhedaShahnawaz">
-                              <button className="fa fa-twitter w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mr-1" />
-                            </a>
-                            <a href="https://www.facebook.com/shahnawaz.bheda">
-                              <button className=" fa fa-facebook w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
-                            </a>
 
-                            <a href="https://www.instagram.com/_shahnawaz_khatri_29/">
-                              <button className="fa fa-instagram w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
-                            </a>
-                          </div>
+                    <div className="p-4 md:p-6 rounded-lg">
+                      <div className="text-center">
+                        <h1 className="text-3xl md:text-5xl mt-6 md:mt-12">Shahnawaz Bheda</h1>
+                        <p className="text-lg md:text-xl mt-3">Web Designer</p>
+                        <div className="mt-4 md:mt-6 flex justify-center">
+                          <a href="https://twitter.com/BhedaShahnawaz">
+                            <button className="fa fa-twitter w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mr-1" />
+                          </a>
+                          <a href="https://www.facebook.com/shahnawaz.bheda">
+                            <button className=" fa fa-facebook w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
+                          </a>
+
+                          <a href="https://www.instagram.com/_shahnawaz_khatri_29/">
+                            <button className="fa fa-instagram w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
+                          </a>
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
 
                 <div className="p-5">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-7">
-                    <div className="col-span-2 sm:col-span-1 md:col-span-1 lg:col-span-2">
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="sm:col-span-1">
                       <p className="text-2xl font-bold">
                         About <span className="text-green-500">Me</span>
                       </p>
                       <p className="mt-4">
-                        Hello! I'm Shahnawaz Bheda, a passionate React developer with a knack for
-                        creating dynamic and engaging web applications.
+                        Hello! I'm Shahnawaz Bheda, a passionate React developer with a knack for creating dynamic and engaging web applications.
                       </p>
                       <button
                         type="button"
-                        className="mt-5 text-gray-900 bg-white hover-bg-gray-100 border border-gray-200 focus-ring-4 focus:outline-none focus-ring-gray-100 font-medium rounded-0 text-sm px-5 py-2.5 text-center inline-flex items-center  dark-hover-bg-gray-700 mr-2 mb-2">
+                        className="mt-5 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-0 text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-gray-700 mb-2">
                         DOWNLOAD RESUME
                       </button>
                     </div>
-                    <div className="sm:col-span-1 md:col-span-1 lg:col-span-1">
-                      <p>Age</p>
-                      <p className="mt-2">Residence</p>
-                      <p className="mt-2">Address</p>
-                      <p className="mt-2">e-mail</p>
-                      <p className="mt-2">Phone</p>
-                      <p className="mt-2">Freelancer</p>
-                    </div>
-                    <div className="text-gray-500 sm:col-span-1 md:col-span-1 lg:col-span-2">
-                      <p className="text-gray-500">22</p>
-                      <p className="text-gray-500 mt-2">Rajkot</p>
-                      <p className="text-gray-500 mt-2">Bajarangvadi, Rajkot</p>
-                      <p className="text-green-400 font-bold mt-2">Shahnawazbheda@gmail.com</p>
-                      <p className="text-gray-500 mt-2">9558362840</p>
-                      <p className="text-gray-500 mt-2">Available</p>
+
+                    <div className="sm:col-span-1">
+                      <p><span className="font-bold">Age</span> : 22</p>
+                      <p className="mt-2"><span className="font-bold">Residence</span> : Rajkot</p>
+                      <p className="mt-2"><span className="font-bold">Address</span> : Bajarangvadi, Rajkot</p>
+                      <p className="mt-2"><span className="font-bold">e-mail :</span> Shahnawazbheda@gmail.com</p>
+                      <p className="mt-2"><span className="font-bold">Phone :</span> +91 9558362840</p>
+                      <p className="mt-2"><span className="font-bold">Freelancer</span> : Available</p>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -122,7 +116,7 @@ export default function Resume() {
                     <p className="text-5xl p-5 text-center">Resume</p>
                   </div>
 
-                  <div className="p-5 container mx-5">
+                  <div className="p-5 container ">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <p className="text-2xl font-bold">Education</p>
@@ -167,6 +161,7 @@ export default function Resume() {
         );
       case "services":
         return (
+
           <div className={contentClasses}>
 
             <div className="container mx-auto px-4 mt-5">
@@ -236,13 +231,15 @@ export default function Resume() {
                   <p className="text-5xl p-5 text-center">Portfolio</p>
                 </div>
 
-                <div className="p-5">
+                <div className="">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5">
                     <div>
-                      <img src={medicCare} alt="Medic Care" className="w-full h-auto  p-12" />
+                      <p className="text-center">Medic care</p>
+                      <img src={medicCare} alt="Medic Care" className="w-full h-auto  " />
                     </div>
                     <div>
-                      <img src={filmNest} alt="Film Nest" className="w-full h-auto  p-12" />
+                      <p className="text-center">Film Nest</p>
+                      <img src={filmNest} alt="Film Nest" className="w-full h-auto " />
                     </div>
                   </div>
                 </div>
@@ -254,85 +251,39 @@ export default function Resume() {
       case "contact":
         return (
           <div className={contentClasses}>
-            {/* <div className="container mx-auto px-4 mt-5">
-              <div className="bg-white border rounded-3xl shadow">
-                <div className="text-2xl border-b rounded-t-3xl text-white bg-[#2ECA7F]">
-                  <p className="text-5xl p-5 text-center">Contact</p>
-                </div>
-
-                <div className="p-5">
-                  <div className="grid grid-cols-2 gap-4 p-3">
-                    <div className="text-xl">
-                      <p className="text-2xl font-bold">
-                        Get in <span className="text-green-500">Touch</span>
-                      </p>
-                      <p className="fa fa-map-marker mt-12  ms-1 text-green-500">
-                        <span className="ms-2 font-bold text-black">Bajarangvadi, Rajkot</span>
-                      </p>{" "}
-                      <br />
-                      <p className="fa fa-envelope mt-5  text-green-500">
-                        <span className="ms-2 font-bold text-black">shahnawazbheda@gmail.com</span>
-                      </p>
-                      <br />
-                      <p className="fa fa-phone mt-5  text-green-500">
-                        <span className="ms-2 font-bold text-black">+91 9558362840</span>
-                      </p>
-                      <br />
-                      <p className="fa fa-check mt-5   text-green-500">
-                        <span className="ms-2 font-bold text-black">Freelance Available</span>
-                      </p>
-                    </div>
-
-                    <div>
-                      <p className="text-2xl font-bold">
-                        Contact <span className="text-green-500">Us</span>
-                      </p>
-
-                      <div className="mt-6 text-3xl md:mt-6">
-                        <a href="https://twitter.com/BhedaShahnawaz">
-                          <button className="fa fa-twitter w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mr-1" />
-                        </a>
-                        <a href="https://www.facebook.com/shahnawaz.bheda">
-                          <button className=" fa fa-facebook w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
-                        </a>
-
-                        <a href="https://www.instagram.com/_shahnawaz_khatri_29/">
-                          <button className="fa fa-instagram w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/shahnawaz-bheda-7771141a3/">
-                          <button className="fa fa-linkedin w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
 
             <div className="container mx-auto px-4 mt-5">
               <div className="bg-white border rounded-3xl shadow">
                 <div className="text-2xl border-b rounded-t-3xl text-white bg-[#2ECA7F]">
                   <p className="text-5xl p-5 text-center">Contact</p>
                 </div>
-
                 <div className="p-5">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-3">
-                    <div className="text-xl">
+                    <div>
                       <p className="text-2xl font-bold">
                         Get in <span className="text-green-500">Touch</span>
                       </p>
-                      <p className="fa fa-map-marker mt-5 text-green-500">
-                        <span className="ms-2 font-bold text-black">Bajarangvadi, Rajkot</span>
-                      </p> <br/>
-                      <p className="fa fa-envelope mt-3 text-green-500">
-                        <span className="ms-2 font-bold text-black">shahnawazbheda@gmail.com</span>
-                      </p><br/>
-                      <p className="fa fa-phone mt-3 text-green-500">
-                        <span className="ms-2 font-bold text-black">+91 9558362840</span>
-                      </p><br/>
-                      <p className="fa fa-check mt-3 text-green-500">
-                        <span className="ms-2 font-bold text-black">Freelance Available</span>
+                      <p className="mt-5">
+                        <span className="fa fa-map-marker text-green-500"></span>
+                        <span className="ms-1 font-bold text-black">Bajarangvadi, Rajkot</span>
+                      </p>
+
+                      <p className="mt-3 flex items-center">
+                        <span className="fa fa-envelope text-green-500"></span>
+                        <span className="ms-1 font-bold text-black">
+                          <span >shahnawazbheda</span>
+                          <span className="md:inline"> @gmail.com</span>
+                        </span>
+                      </p>
+
+
+                      <p className="mt-3">
+                        <span className="fa fa-phone text-green-500"></span>
+                        <span className="ms-1 font-bold text-black">+91 9558362840</span>
+                      </p>
+                      <p className="mt-3">
+                        <span className="fa fa-check text-green-500"></span>
+                        <span className="ms-1 font-bold text-black">Freelance Available</span>
                       </p>
                     </div>
 
@@ -340,19 +291,18 @@ export default function Resume() {
                       <p className="text-2xl font-bold">
                         Contact <span className="text-green-500">Us</span>
                       </p>
-
                       <div className="mt-4 md:mt-6 text-2xl md:text-3xl">
                         <a href="https://twitter.com/BhedaShahnawaz">
                           <button className="fa fa-twitter w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mr-1" />
                         </a>
                         <a href="https://www.facebook.com/shahnawaz.bheda">
-                          <button className=" fa fa-facebook w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
+                          <button className=" fa fa-facebook md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
                         </a>
                         <a href="https://www.instagram.com/_shahnawaz_khatri_29/">
-                          <button className="fa fa-instagram w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
+                          <button className="fa fa-instagram md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
                         </a>
                         <a href="https://www.linkedin.com/in/shahnawaz-bheda-7771141a3/">
-                          <button className="fa fa-linkedin w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
+                          <button className="fa fa-linkedin ms-2 md:w-10 md:h-10 rounded-full bg-white text-gray-400 mx-1" />
                         </a>
                       </div>
                     </div>
@@ -360,6 +310,7 @@ export default function Resume() {
                 </div>
               </div>
             </div>
+
           </div>
         );
       default:
@@ -369,107 +320,60 @@ export default function Resume() {
 
   return (
     <div className="bg-[#F9F9F9] h-screen">
-      {/* <nav className="bg-white dark-bg-gray-900">
+
+      <nav className="bg-white dark-bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <b>
             <p className="text-2xl">
               Shahnawaz <span className="text-green-500">Bheda</span>
             </p>
           </b>
-          <div className="w-full md:block md:w-auto">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-lg md:flex-row md:space-x-8 md:mt-0 md-border-0">
+          <div className="w-full md:block md:w-auto ">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md-border-0">
               <li>
                 <button
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
-                  onClick={() => handleNavClick("home")}>
+                  onClick={() => handleNavClick("home")}
+                >
                   Home
                 </button>
               </li>
               <li>
                 <button
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100"
-                  onClick={() => handleNavClick("resume")}>
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
+                  onClick={() => handleNavClick("resume")}
+                >
                   Resume
                 </button>
               </li>
               <li>
                 <button
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100"
-                  onClick={() => handleNavClick("services")}>
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
+                  onClick={() => handleNavClick("services")}
+                >
                   Services
                 </button>
               </li>
               <li>
                 <button
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100"
-                  onClick={() => handleNavClick("portfolio")}>
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
+                  onClick={() => handleNavClick("portfolio")}
+                >
                   Portfolio
                 </button>
               </li>
               <li>
                 <button
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100"
-                  onClick={() => handleNavClick("contact")}>
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
+                  onClick={() => handleNavClick("contact")}
+                >
                   Contact
                 </button>
               </li>
             </ul>
           </div>
         </div>
-      </nav> */}
-      <nav className="bg-white dark-bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <b>
-          <p className="text-2xl">
-            Shahnawaz <span className="text-green-500">Bheda</span>
-          </p>
-        </b>
-        <div className="w-full md:block md:w-auto">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md-border-0">
-            <li>
-              <button
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
-                onClick={() => handleNavClick("home")}
-              >
-                Home
-              </button>
-            </li>
-            <li>
-              <button
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
-                onClick={() => handleNavClick("resume")}
-              >
-                Resume
-              </button>
-            </li>
-            <li>
-              <button
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
-                onClick={() => handleNavClick("services")}
-              >
-                Services
-              </button>
-            </li>
-            <li>
-              <button
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
-                onClick={() => handleNavClick("portfolio")}
-              >
-                Portfolio
-              </button>
-            </li>
-            <li>
-              <button
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
-                onClick={() => handleNavClick("contact")}
-              >
-                Contact
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
 
       <div className="container mx-auto px-4 mt-5">
         <CSSTransition in={contentVisible} timeout={300} classNames="slide-content" unmountOnExit>
