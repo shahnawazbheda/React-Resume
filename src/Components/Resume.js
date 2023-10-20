@@ -44,7 +44,7 @@ export default function Resume() {
                     <div className="text-center">
                       <div className="flex justify-center">
                         <img
-                          className="max-w-xs md:ms-16 rounded-xl transition duration-100 ease-in-out hover:scale-110 m-3 sm:max-w-sm max-w-[40%] mt-12 md:max-w-sm"
+                          className="max-w-sm md:ms-16 rounded-xl transition duration-100 ease-in-out hover:scale-110 m-3 sm:max-w-sm max-w-[35%] mt-12 md:max-w-sm"
                           src={profile}
                           alt="User Image"
                         />
@@ -94,8 +94,8 @@ export default function Resume() {
                       <p><span className="font-bold">Age</span> : 22</p>
                       <p className="mt-2"><span className="font-bold">Residence</span> : Rajkot</p>
                       <p className="mt-2"><span className="font-bold">Address</span> : Bajarangvadi, Rajkot</p>
-                      <p className="mt-2"><span className="font-bold">e-mail :</span> Shahnawazbheda@gmail.com</p>
-                      <p className="mt-2"><span className="font-bold">Phone :</span> +91 9558362840</p>
+                      <a href="mailto:shahnawazbheda@gmail.com" className="mt-2"><span className="font-bold">e-mail </span>: shahnawazbheda@gmail.com</a>
+                      <p className="mt-2"><span className="font-bold">Phone </span>: +91 9558362840</p>
                       <p className="mt-2"><span className="font-bold">Freelancer</span> : Available</p>
                     </div>
                   </div>
