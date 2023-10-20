@@ -44,7 +44,7 @@ export default function Resume() {
                     <div className="text-center">
                       <div className="flex justify-center">
                         <img
-                          className="max-w-sm md:ms-16 rounded-xl transition duration-100 ease-in-out hover:scale-110 m-3 sm:max-w-sm max-w-[35%] mt-12 md:max-w-sm"
+                          className="max-w-sm md:ms-16 rounded-xl transition duration-100 ease-in-out hover:scale-110 m-3 sm:max-w-sm max-w-[29%] mt-12 md:max-w-sm"
                           src={profile}
                           alt="User Image"
                         />
@@ -83,11 +83,11 @@ export default function Resume() {
                       <p className="mt-4">
                         Hello! I'm Shahnawaz Bheda, a passionate React developer with a knack for creating dynamic and engaging web applications.
                       </p>
-                      <button
-                        type="button"
-                        className="mt-5 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-0 text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-gray-700 mb-2">
+                      <a
+                        href="https://drive.google.com/file/d/1ta1C2lfIailhYPX9HIyEhg0neFmWlT1Z/view?usp=sharing"
+                        className="mt-5 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-0 text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-black dark:hover:text-white mb-2">
                         DOWNLOAD RESUME
-                      </button>
+                      </a>
                     </div>
 
                     <div className="sm:col-span-1">
